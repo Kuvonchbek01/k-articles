@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+/* Container */
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+/* Main content */
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.main-content-wrapper {
+    display: flex;
+    flex-grow: 1;
+}
+
+.hero {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba( 0, 0, 0, 0.3),rgba( 0, 0, 0, 0.3) ), url('../images/Rectangle\ 1.png');
+    background-size: cover;
+    background-position:center bottom ;
+    background-repeat:no-repeat;
+}
+.hero-content {
+    width: 285px;
+}
+.hero-heading {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 24px;
+}
+.hero-link {
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    background-color:#1E90FF;
+    padding: 12px 24px;
+}
+
+.hero-link::before{
+    display: inline-block;
+    content: '';
+    background: url('../images/Vector\ \(5\).svg');
+    width: 20px;
+    height: 19px;
+    margin-right: 12px;
+}
+
+.hero-link:hover{
+    opacity: 0.8;
+}
+
+.hero-link:active{
+    opacity: 0.6;
+}
+
+
+
+.main {
+    max-width: 600px;
+    width: 100%;
+    padding-left: 54px;
+    padding-right: 54px;
+    padding-top: 54px;
+}
+
+.main-action-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-heading {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+    letter-spacing: 2px;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.main-devider {
+    margin-top: 0;
+    margin-bottom: 24px;
+    border: 1px solid #999999;
+}
+
+.first-card, .second-card{
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.third-card{
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 23px;
+}
+
+.card-img {
+    margin-right: 16px;
+}
+
+.card-action-heading-link{
+    text-decoration: none;
+    color:#222222;
+}
+
+.card-action-heading {
+    width: 307px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-bottom: 4px;
+    transition: 0.5s;
+}
+
+.card-action-heading:hover{
+    color: #1E90FF;
+}
+
+.card-action-heading:active{
+    opacity: 0.6;
+}
+
+.card-action-description {
+    display: flex;
+}
+
+.card-action-description-date {
+    display: flex;
+    align-items: center;
+}
+
+.card-action-description-date-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    color:#888888;
+    margin: 0;
+    margin-right: 24px;
+}
+.card-action-description-viewed {
+    display: flex;
+    align-items: center;
+}
+
+.card-action-description-date-img, .card-action-description-viewed-img{
+    margin-right: 5.33px;
+}
+
+.main-button {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+    text-decoration: none;
+    color: #fff;
+    background-color:#1E90FF;
+    padding: 12px 180px;
+    border-radius: 4px;
+}
+
+.main-button:hover{
+    opacity: 0.8;
+}
+
+.main-button:active{
+    opacity: 0.6;
+}
+
+.card-container{
+    flex-direction: column;
+}
